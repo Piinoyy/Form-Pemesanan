@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seoul Food - Booking Menu</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+
+<body>
+
+    <div class="background-circle circle-one"></div>
+    <div class="background-circle circle-two"></div>
+
+    <main class="container">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <div class="brand">
+                <div class="brand-logo">
+                    SF
+                </div>
+
+                <div>
+                    <h1>Seoul Food</h1>
+                    <p>Korean Restaurant</p>
+                </div>
+            </div>
+
+            <div class="korean">
+                서울 음식
+            </div>
+
+        </header>
+
+
+        <!-- FORM -->
+        <section class="booking-card">
+
+            <div class="intro">
+                <span class="label">TABLE RESERVATION</span>
+
+                <h2>Pesan Makanan Favoritmu</h2>
+
+                <p>
+                    Lengkapi data berikut untuk melakukan pemesanan
+                    menu di Seoul Food.
+                </p>
+            </div>
+
+
+            <!-- DATA PEMESAN -->
+            <div class="section">
+
+                <div class="section-title">
+                    <span>01</span>
+
+                    <div>
+                        <h3>Data Pemesan</h3>
+                        <p>Informasi pelanggan</p>
+                    </div>
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="input-box">
+                        <label>Nama Lengkap</label>
+
+                        <div class="input-wrapper">
+                            <span>👤</span>
+                            <input
+                                type="text"
+                                placeholder="Masukkan nama lengkap"
+                                required>
+                        </div>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label>No. HP</label>
+
+                        <div class="input-wrapper">
+                            <span>📱</span>
+                            <input
+                                type="text"
+                                placeholder="08xxxxxxxxxx"
+                                required>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="input-box date-box">
+                    <label>Tanggal Booking</label>
+
+                    <div class="input-wrapper">
+                        <span>📅</span>
+
+                        <input
+                            type="date"
+                            required>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- PILIH MENU -->
+            <div class="section">
+
+                <div class="section-title">
+                    <span>02</span>
+
+                    <div>
+                        <h3>Pilih Kategori Menu</h3>
+                        <p>Pilih menu yang ingin dipesan</p>
+                    </div>
+                </div>
+
+
+                <div class="menu-list">
+
+                    <label class="menu-item">
+
+                        <input
+                            type="checkbox"
+                            name="menu"
+                            value="makanan">
+
+                        <div class="menu-content">
+
+                            <div class="menu-icon">
+                                🍜
+                            </div>
+
+                            <div class="menu-text">
+                                <strong>Makanan</strong>
+
+                                <small>
+                                    Tteokbokki, Kimbap,
+                                    Bulgogi
+                                </small>
+                            </div>
+
+                            <div class="check">
+                                ✓
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+
+                    <label class="menu-item">
+
+                        <input
+                            type="checkbox"
+                            name="menu"
+                            value="minuman">
+
+                        <div class="menu-content">
+
+                            <div class="menu-icon">
+                                🥤
+                            </div>
+
+                            <div class="menu-text">
+                                <strong>Minuman</strong>
+
+                                <small>
+                                    Milk Tea, Coffee,
+                                    Korean Soda
+                                </small>
+                            </div>
+
+                            <div class="check">
+                                ✓
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+
+                    <label class="menu-item">
+
+                        <input
+                            type="checkbox"
+                            name="menu"
+                            value="dessert">
+
+                        <div class="menu-content">
+
+                            <div class="menu-icon">
+                                🍰
+                            </div>
+
+                            <div class="menu-text">
+                                <strong>Dessert</strong>
+
+                                <small>
+                                    Bingsu, Hotteok,
+                                    Korean Cake
+                                </small>
+                            </div>
+
+                            <div class="check">
+                                ✓
+                            </div>
+
+                        </div>
+
+                    </label>
+
+                </div>
+
+
+
+                <!-- JUMLAH -->
+                <div class="quantity">
+
+                    <div class="input-box">
+
+                        <label>Jumlah Item</label>
+
+                        <div class="input-wrapper">
+
+                            <span>🛍️</span>
+
+                            <input
+                                type="number"
+                                min="1"
+                                placeholder="Jumlah item"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PEMBAYARAN -->
+            <div class="section">
+
+                <div class="section-title">
+
+                    <span>03</span>
+
+                    <div>
+                        <h3>Metode Pembayaran</h3>
+                        <p>Pilih metode pembayaran</p>
+                    </div>
+
+                </div>
+
+
+
+                <div class="payment-list">
+
+
+                    <!-- VISA -->
+                    <label class="payment-item">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="visa"
+                            required>
+
+                        <div class="payment-content">
+
+                            <div class="payment-logo visa">
+                                VISA
+                            </div>
+
+                            <div class="payment-text">
+
+                                <strong>
+                                    Kartu Debit / Kredit
+                                </strong>
+
+                                <small>
+                                    Visa
+                                </small>
+
+                            </div>
+
+                            <div class="radio">
+                                <span></span>
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+
+                    <!-- MASTERCARD -->
+                    <label class="payment-item">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="mastercard">
+
+                        <div class="payment-content">
+
+                            <div class="payment-logo mastercard">
+                                <i></i>
+                                <i></i>
+                            </div>
+
+                            <div class="payment-text">
+
+                                <strong>
+                                    Kartu Debit / Kredit
+                                </strong>
+
+                                <small>
+                                    Mastercard
+                                </small>
+
+                            </div>
+
+                            <div class="radio">
+                                <span></span>
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+
+                    <!-- DANA -->
+                    <label class="payment-item">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="dana">
+
+                        <div class="payment-content">
+
+                            <div class="payment-logo dana">
+                                DANA
+                            </div>
+
+                            <div class="payment-text">
+
+                                <strong>
+                                    Dompet Digital
+                                </strong>
+
+                                <small>
+                                    DANA
+                                </small>
+
+                            </div>
+
+                            <div class="radio">
+                                <span></span>
+                            </div>
+
+                        </div>
+
+                    </label>
+
+                </div>
+
+
+
+                <!-- NOMOR PEMBAYARAN -->
+                <div class="input-box payment-number">
+
+                    <label>
+                        Nomor Kartu / Dompet Digital
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span>💳</span>
+
+                        <input
+                            type="text"
+                            placeholder="Masukkan nomor pembayaran">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CATATAN -->
+            <div class="note">
+
+                <div class="note-icon">
+                    ♡
+                </div>
+
+                <div>
+                    <strong>
+                        Pesanan kamu hampir selesai!
+                    </strong>
+
+                    <p>
+                        Pastikan data yang dimasukkan sudah benar
+                        sebelum menekan tombol pesan.
+                    </p>
+                </div>
+
+            </div>
+
+
+
+            <!-- SUBMIT -->
+            <button
+                type="submit"
+                class="submit-button">
+
+                <span>
+                    Konfirmasi Pemesanan
+                </span>
+
+                <b>→</b>
+
+            </button>
+
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            <div class="footer-line"></div>
+
+            <p>
+                Seoul Food Korean Restaurant
+            </p>
+
+            <span>
+                맛있는 음식과 좋은 하루를
+            </span>
+
+        </footer>
+
+    </main>
+
+</body>
+</html>
